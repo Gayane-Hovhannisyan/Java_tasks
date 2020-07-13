@@ -4,7 +4,9 @@ public class forloops2 {
 
         exercise123(1);
 
-        exercise125(1)
+        exercise125(1);
+
+        exercise127(1);
     }
 
     public static void exercise121(int n) {
@@ -44,13 +46,13 @@ public class forloops2 {
     public static void exercise125(int n) {
         double S = 0;
         double x, y;
-        for(i = 1; i <= 10; i++) {
-            if(i / 3 == 0) {
+        for (i = 1; i <= 10; i++) {
+            if (i / 3 == 0) {
                 x = Math.log(i);
             } else {
                 x = 3;
             }
-            if ( i / 7 == 0) {
+            if (i / 7 == 0) {
                 y = Math.log(i) / Math.log(3);
             } else {
                 y = 3;
@@ -60,4 +62,19 @@ public class forloops2 {
         System.out.println("S = " + S);
     }
 
+    public static void exercise127(int n) {
+        double x, y;
+        double S = 1;
+        for (i = 1; i <= 17; i++) {
+            if (i % 2 == 1) {
+                x = Math.pow(Math.sin(i), 2);
+                y = Math.tan(i);
+            } else {
+                x = 0;
+                y = 1 / Math.tan(i);
+            }
+            S = S * Math.pow(x,2) * y;            
+        }
+        System.out.println("S = " + S);
+    }
 }
