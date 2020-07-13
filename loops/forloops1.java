@@ -8,6 +8,8 @@ public class forloops1 {
 
         exercise107(1);
 
+        exercise109(1);
+
         exercise110(1);
     }
 
@@ -47,7 +49,18 @@ public class forloops1 {
         System.out.println("S = " + S);
     }
 
-    public static void exercise110(int n) {
+    public static void exercise107(int n) {
+        double x = 1;
+        double y = 1;
+        double S = 1;
+        for (i = 0; i <= 3 * n; i++) {
+            S = S * Math.cos(x + y);
+            x = x / 2;
+            y = y / 3;
+        }
+    }
+
+    public static void exercise109(int n) {
         double a = 1;
         double b = 2;
         double S = 0;
@@ -57,5 +70,16 @@ public class forloops1 {
             b = 5 * Math.tan(b) + 3;
         }
         System.out.println("S = " + S);
+    }
+
+    public static void exercise110(int n) {
+        double a = 1;
+        double b = 1;
+        double S = 1;
+        for (i = 0; i <= 3 * n; i++) {
+            S = S * (a + b);
+            a = Math.sin(a);
+            b = Math.cos(b + 3);
+        }
     }
 }
