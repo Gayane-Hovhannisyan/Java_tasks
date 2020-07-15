@@ -1,10 +1,14 @@
 public class forloops3 {
     public static void main(String[] args) {
-        //exercise141(1);
+        exercise141(1);
 
-        //exercise143(1);
+        exercise143(1);
 
-        exercise145(0);
+        exercise145(1);
+
+        exercise148(1);
+
+        exercise150(5);
     }
 
     public static void exercise141(double a) {
@@ -44,6 +48,32 @@ public class forloops3 {
             P = P + S;
             S = 1;
         }
+        System.out.println("P = " + P);
+    }
+
+    public static void exercise148(double f) {
+        double P = 1;
+        double S = 0;
+        for (int i = 1; i <= 12; i++) {
+            for (int j = 1; j <= 7; j++) {
+                S = S + f * i + Math.pow(j,2);
+            }
+            P = P * S * (i + 1);
+            S = 0;
+        }
+        System.out.println("P = " + P);
+    }
+
+    public static void exercise150 (double b) {
+        double S = 0;
+        double P = 1;
+        for (int k = 1; k <= 10; k++) {
+            for (int j = 1; j <= 8; j++) {
+                S = S + Math.tan(b * k + Math.pow(j,2));
+            }
+            P = P * S * (k + 1);
+            S = 0;
+        } 
         System.out.println("P = " + P);
     }
 }
