@@ -1,8 +1,10 @@
 public class forloops3 {
     public static void main(String[] args) {
-        exercise141(1);
+        //exercise141(1);
 
-        exercise143(1);
+        //exercise143(1);
+
+        exercise145(0);
     }
 
     public static void exercise141(double a) {
@@ -27,6 +29,19 @@ public class forloops3 {
                 S = S * (i / (i + m * n));
             }
             P = P * S;
+            S = 1;
+        }
+        System.out.println("P = " + P);
+    }
+
+    public static void exercise145( double c) {
+        double S = 1;
+        double P = 0;
+        for (int i = 1; i <= 7; i++) {
+            for (int k = 1; k <= 8; k++) {
+                S = S * Math.pow(i,2) + c * k;
+            }
+            P = P + S;
             S = 1;
         }
         System.out.println("P = " + P);
