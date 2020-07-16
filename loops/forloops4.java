@@ -1,8 +1,9 @@
 public class forloops4 {
     public static void main(String[] args) {
-       // exercise151(6);
+        exercise151(6);
 
-        exercise154(100);
+        exercise154(10);
+
     }
 
     public static void exercise151(int n) {
@@ -16,11 +17,12 @@ public class forloops4 {
         System.out.println("S = " + S);
     }
 
+
     public static void exercise154(int n) {
         int P = 1;
-        for (int i = 1; i < n / 2; i++) {
+        for (int i = 1; i < n / 2 + 3; i++) {
             if (n % i == 3) {
-                P = P * (i + n / i);
+                P = P * i;
             }
         }
         System.out.println("P = " + P);
