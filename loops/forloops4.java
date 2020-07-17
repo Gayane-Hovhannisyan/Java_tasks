@@ -6,6 +6,8 @@ public class forloops4 {
 
         exercise156();
 
+        exercise159();
+
     }
 
     public static void exercise151(int n) {
@@ -15,7 +17,6 @@ public class forloops4 {
                 S = S + i + n / i;
             }
         }
-
         System.out.println("S = " + S);
     }
 
@@ -38,6 +39,16 @@ public class forloops4 {
                 if (i % 5 == 0) {
                     P = P * i;
                 }
+            }
+        }
+        System.out.println("P = " + P);
+    }
+
+    public static void exercise159() {
+        long P = 1;
+        for (int i = 100; i < 1000; i++) {
+            if (i % 3 == 1 && i % 4 == 2) {
+                P = P * i;
             }
         }
         System.out.println("P = " + P);
