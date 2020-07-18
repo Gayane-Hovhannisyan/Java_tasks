@@ -8,6 +8,8 @@ public class forloops4 {
 
         exercise159();
 
+        exercise164(20);
+
     }
 
     public static void exercise151(int n) {
@@ -52,5 +54,16 @@ public class forloops4 {
             }
         }
         System.out.println("P = " + P);
+    }
+
+    
+
+    public static void exercise164(int n) {
+        for(int i = 10; i < 32; i++) {
+            if(i > n) {
+                System.out.println("value = " + i*i);
+                return;
+            }
+        }
     }
 }
