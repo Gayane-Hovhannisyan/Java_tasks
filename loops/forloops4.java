@@ -1,8 +1,8 @@
 public class forloops4 {
     public static void main(String[] args) {
-        exercise151(6);
+        exercise151(8);
 
-        exercise154(10);
+        exercise154(15);
 
         exercise156();
 
@@ -10,7 +10,7 @@ public class forloops4 {
 
         exercise162();
 
-        exercise164(20);
+        exercise164(17);
 
     }
 
