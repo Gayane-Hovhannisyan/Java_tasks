@@ -1,5 +1,8 @@
 public class arraysone {
     public static void main(String[] args) {
+        example1array();
+    }
+    public static void example1array() {
         int month_days[];
         month_days = new int[12];
         month_days[0] = 31;
@@ -14,6 +17,6 @@ public class arraysone {
         month_days[9] = 31;
         month_days[10] = 30;
         month_days[11] = 31;
-        System.out.println("Spril has" + month_days[3] + "days.");
+        System.out.println("April has " + month_days[3] + " days.");
     }
 }
