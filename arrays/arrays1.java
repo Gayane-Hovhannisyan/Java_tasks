@@ -1,8 +1,12 @@
+import org.graalvm.compiler.lir.ssa.SSAUtil.PhiValueVisitor;
+
 public class arrays1 {
     public static void main(String[] args) {
         exercise211();
 
         exercise213();
+
+        exercise215();
 
     }
 
@@ -32,5 +36,17 @@ public class arrays1 {
         }
         S = Math.sqrt(S) / k;
         System.out.println("S = " + S);
+    }
+
+    public static void exercise215() {
+        int numbers[] = { 1, -5, 485, 7, 8, 36, 48, 7, 8};
+        int S = 0;
+        for ( int i = 0; i< 8; i ++) {
+            if (i % 2 == 0 ) {
+                S = S + numbers[i];
+            }
+
+        }
+        System.out.print("S = " + S);
     }
 }
