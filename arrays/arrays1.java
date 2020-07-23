@@ -2,15 +2,15 @@ import org.graalvm.compiler.lir.ssa.SSAUtil.PhiValueVisitor;
 
 public class arrays1 {
     public static void main(String[] args) {
-        //exercise211();
+        exercise211();
 
-        //exercise213();
+        exercise213();
 
-        //exercise215();
+        exercise215();
 
-        //exercise218();
+        exercise218();
 
-        //exercise220();
+        exercise220();
 
         exercise222(2, 125);
 
