@@ -6,6 +6,8 @@ public class arrays2 {
 
         exercise226(50);
 
+        exercise227(6);
+
     }
 
     public static void exercise223(int a, int b) {
@@ -39,5 +41,19 @@ public class arrays2 {
             }
         }
         System.out.println("m = " + m);
+    }
+
+    public static void exercise227(int k) {
+        int numbers[] = {5, 47, -9, -3, 7, 63, 12, 18, -25, -1, -3, -2, 32, 4};
+        double S = 0;
+        int m = 0;
+        for(int i = 0; i < 14; i++) {
+            if (i % k == 0) {
+                S = S + numbers[i];
+                m = m + 1;
+            }
+        }
+         S = S / m;
+         System.out.println("S = " + S);
     }
 }
