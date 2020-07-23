@@ -10,6 +10,8 @@ public class arrays3 {
         exercise236();
 
         exercise237();
+
+        exercise239();
     }
 
     public static void exercise231() {
@@ -76,5 +78,19 @@ public class arrays3 {
         }
         System.out.println("m = " + m);
 
+    }
+
+    public static void exercise239() {
+        int numbers[] = { 0, 5, 48, 25, 35, 0, -1, 257, 15, 115, 0, 0, 4 };
+        int m = 0;
+        double S = 0;
+        for (int i = 0; i < 13; i++) {
+            if (numbers[i] % 5 == 0) {
+                m = m + 1;
+                S = S + Math.pow(numbers[i], 2);
+            }
+        }
+        S = S / m;
+        System.out.println("S = " + S);
     }
 }
