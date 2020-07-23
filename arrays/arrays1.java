@@ -8,6 +8,8 @@ public class arrays1 {
 
         exercise215();
 
+        exercise218();
+
     }
 
     public static void exercise211() {
@@ -39,14 +41,25 @@ public class arrays1 {
     }
 
     public static void exercise215() {
-        int numbers[] = { 1, -5, 485, 7, 8, 36, 48, 7, 8};
+        int numbers[] = { 1, -5, 485, 7, 8, 36, 48, 7, 8 };
         int S = 0;
-        for ( int i = 0; i< 8; i ++) {
-            if (i % 2 == 0 ) {
+        for (int i = 0; i < 8; i++) {
+            if (i % 2 == 0) {
                 S = S + numbers[i];
             }
 
         }
         System.out.print("S = " + S);
+    }
+
+    public static void exercise218() {
+        int numbers[] = { 1, -9, 5, 9, 547, -69, 7, -7, 36, -32 };
+        int S = 0;
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 == 1) {
+                S = S + Math.abs(numbers[i]);
+            }
+        }
+        System.out.println("S = " + S);
     }
 }
