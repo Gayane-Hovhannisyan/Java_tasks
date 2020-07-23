@@ -10,6 +10,8 @@ public class arrays1 {
 
         exercise218();
 
+        exercise220();
+
     }
 
     public static void exercise211() {
@@ -58,6 +60,17 @@ public class arrays1 {
         for (int i = 0; i < 10; i++) {
             if (i % 2 == 1) {
                 S = S + Math.abs(numbers[i]);
+            }
+        }
+        System.out.println("S = " + S);
+    }
+
+    public static void exercise220() {
+        int number[] = { 1, 58, -69, 0, 87, 0, -45, 0, 2, 0 };
+        int S = 0;
+        for(int i = 0; i < 10; i++) {
+            if(number[i] != 0) {
+                S = S + number[i];
             }
         }
         System.out.println("S = " + S);
