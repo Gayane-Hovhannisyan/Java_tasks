@@ -1,3 +1,5 @@
+import org.graalvm.compiler.hotspot.stubs.OutOfBoundsExceptionStub;
+
 public class arrays2 {
     public static void main(String[] args) {
         exercise223(0, 100);
@@ -9,6 +11,8 @@ public class arrays2 {
         exercise227(6);
 
         exercise229();
+
+        exercise230(4);
 
     }
 
@@ -69,5 +73,19 @@ public class arrays2 {
         }
         System.out.println("P = " + P);
 
+    }
+
+    public static void exercise230(int k) {
+        double numbers[] = { 5, 4.7, -9.5, -50.3, 1.7, 63.7, 12.3, 18.2, -25.4, -12.9, -24.33, -2.2, 3.2, 4 };
+        double S = 0;
+        int m = 0; 
+        for (int i = 0; i < 14; i++) {
+            if ((int)numbers[i] % k == 0) {
+                S = S + Math.pow(numbers[i], 2);
+                m = m + 1;
+            }
+        }
+        S = Math.sqrt(S) / m;
+        System.out.println("S230 = " + S);
     }
 }
