@@ -12,6 +12,8 @@ public class arrays3 {
         exercise237();
 
         exercise239();
+
+        exercise241(3);
     }
 
     public static void exercise231() {
@@ -91,6 +93,17 @@ public class arrays3 {
             }
         }
         S = S / m;
+        System.out.println("S = " + S);
+    }
+
+    public static void exercise241(int k) {
+        int numbers[] = { 0, 5, 18, 6, 35, 9, -1, 27, 15, 115, 0, 0, 4 };
+        int S = 0;
+        for(int i = 0; i < 13; i++) {
+            if(numbers[i] % k == 0) {
+                S = S + numbers[i];
+            }
+        }
         System.out.println("S = " + S);
     }
 }
