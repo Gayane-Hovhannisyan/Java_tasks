@@ -8,6 +8,8 @@ public class arrays2 {
 
         exercise227(6);
 
+        exercise229();
+
     }
 
     public static void exercise223(int a, int b) {
@@ -22,10 +24,10 @@ public class arrays2 {
     }
 
     public static void exercise225(int t) {
-        int numbers[] = {5, 25, -125, -7, -36, 47, 36, 9, 71, -8, -37, -19}; 
+        int numbers[] = { 5, 25, -125, -7, -36, 47, 36, 9, 71, -8, -37, -19 };
         int k = 1;
-        for(int i = 0; i < 12; i++) {
-            if( Math.abs(numbers[i]) < t) {
+        for (int i = 0; i < 12; i++) {
+            if (Math.abs(numbers[i]) < t) {
                 k = k * numbers[i];
             }
         }
@@ -33,10 +35,10 @@ public class arrays2 {
     }
 
     public static void exercise226(int k) {
-        int numbers[] = {5, 25, -125, -7, -36, 47, 36, 9, 71, -8, -37, -19}; 
+        int numbers[] = { 5, 25, -125, -7, -36, 47, 36, 9, 71, -8, -37, -19 };
         int m = 1;
-        for(int i = 0; i < 12; i++) {
-            if( Math.abs(numbers[i]) < k) {
+        for (int i = 0; i < 12; i++) {
+            if (Math.abs(numbers[i]) < k) {
                 m = m + 1;
             }
         }
@@ -44,16 +46,28 @@ public class arrays2 {
     }
 
     public static void exercise227(int k) {
-        int numbers[] = {5, 47, -9, -3, 7, 63, 12, 18, -25, -1, -3, -2, 32, 4};
+        int numbers[] = { 5, 47, -9, -3, 7, 63, 12, 18, -25, -1, -3, -2, 32, 4 };
         double S = 0;
         int m = 0;
-        for(int i = 0; i < 14; i++) {
+        for (int i = 0; i < 14; i++) {
             if (i % k == 0) {
                 S = S + numbers[i];
                 m = m + 1;
             }
         }
-         S = S / m;
-         System.out.println("S = " + S);
+        S = S / m;
+        System.out.println("S = " + S);
+    }
+
+    public static void exercise229() {
+        int numbers[] = { 5, 47, -9, -3, 7, 63, 12, 18, -25, -1, -3, -2, 32, 4 };
+        int P = 1;
+        for (int i = 0; i < 14; i++) {
+            if (numbers[i] - i > 0) {
+                P = P * numbers[i];
+            }
+        }
+        System.out.println("P = " + P);
+
     }
 }
