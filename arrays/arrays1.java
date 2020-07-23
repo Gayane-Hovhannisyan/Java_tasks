@@ -2,15 +2,17 @@ import org.graalvm.compiler.lir.ssa.SSAUtil.PhiValueVisitor;
 
 public class arrays1 {
     public static void main(String[] args) {
-        exercise211();
+        //exercise211();
 
-        exercise213();
+        //exercise213();
 
-        exercise215();
+        //exercise215();
 
-        exercise218();
+        //exercise218();
 
-        exercise220();
+        //exercise220();
+
+        exercise222(2, 125);
 
     }
 
@@ -74,5 +76,17 @@ public class arrays1 {
             }
         }
         System.out.println("S = " + S);
+    }
+
+    public static void exercise222(int c, int d) {
+
+        int numbers[] = {12, 1254, -45, 2, 45, 54, 7, 3, 26};
+        int P = 1;
+        for (int i = 0; i < 9; i++) {
+            if (numbers[i] >= c && numbers[i] < d) {
+                P = P * numbers[i];
+            }
+        }
+        System.out.println("P = " + P);
     }
 }
