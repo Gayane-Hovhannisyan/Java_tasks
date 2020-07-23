@@ -4,6 +4,8 @@ public class arrays2 {
 
         exercise225(100);
 
+        exercise226(50);
+
     }
 
     public static void exercise223(int a, int b) {
@@ -19,12 +21,23 @@ public class arrays2 {
 
     public static void exercise225(int t) {
         int numbers[] = {5, 25, -125, -7, -36, 47, 36, 9, 71, -8, -37, -19}; 
-        int k = 0;
+        int k = 1;
         for(int i = 0; i < 12; i++) {
             if( Math.abs(numbers[i]) < t) {
-                k = k + 1;
+                k = k * numbers[i];
             }
         }
-        System.out.println("k = " + k);
+        System.out.println("P = " + k);
+    }
+
+    public static void exercise226(int k) {
+        int numbers[] = {5, 25, -125, -7, -36, 47, 36, 9, 71, -8, -37, -19}; 
+        int m = 1;
+        for(int i = 0; i < 12; i++) {
+            if( Math.abs(numbers[i]) < k) {
+                m = m + 1;
+            }
+        }
+        System.out.println("m = " + m);
     }
 }
