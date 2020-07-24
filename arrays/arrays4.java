@@ -13,6 +13,8 @@ public class arrays4 {
 
         exercise248(2);
 
+        exercise250();
+
     }
 
     public static void exercise242(int m) {
@@ -70,14 +72,26 @@ public class arrays4 {
 
     public static void exercise248(int k) {
         int numbers[] = { 3, 1, 16, 6, 1, 9, -1, 27, 15, 1, 7, 5, 4 };
-        int S = 0; 
+        int S = 0;
         for (int i = 0; i < 13; i++) {
             int l = i + numbers[i];
-            if( Math.pow(l,2) % k == 0 ) {
+            if (Math.pow(l, 2) % k == 0) {
                 S = S + numbers[i];
             }
         }
         System.out.println("S = " + S);
+    }
+
+    public static void exercise250() {
+        int numbers[] = { 3, 1, 16, 6, 1, 9, -1, 27, 15, 1, 7, 5, 4 };
+        int P = 1;
+        for (int i = 0; i < 13; i++) {
+            int m = i * numbers[i];
+            if (m % 3 == 2) {
+                P = P * numbers[i];
+            }
+        }
+        System.out.println("P = " + P);
     }
 
 }
