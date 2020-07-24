@@ -9,6 +9,8 @@ public class arrays4 {
 
         exercise245();
 
+        exercise246();
+
     }
 
     public static void exercise242(int m) {
@@ -45,6 +47,23 @@ public class arrays4 {
         }
         System.out.println("S = " + S);
 
+    }
+
+    public static void exercise246() {
+        int numbers[] = { 3, 1, 16, 6, 1, 9, -1, 27, 15, 1, 7, 5, 4 };
+        int m = 0;
+        double S = 0;
+        for (int i = 1; i < 13; i++) {
+            double k = Math.sqrt(i);
+            double l = k - (int) k;
+            if (l == 0) {
+                System.out.println("numbers[" + i + "] = " + numbers[i]);
+                S = S + numbers[i];
+                m = m + 1;
+            }
+        }
+        S = S / m;
+        System.out.println("S = " + S);
     }
 
 }
