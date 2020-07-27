@@ -9,13 +9,13 @@ public class Arrays5 {
             System.out.println("numbers[" + i + "]=" + numbers[i]);
         }
 
-        //exercise251();
+        exercise251();
 
-        //exercise253();
+        exercise253();
 
-        //exercise255();
+        exercise255();
 
-        //exercise257();
+        exercise257();
 
         exercise259();
 
