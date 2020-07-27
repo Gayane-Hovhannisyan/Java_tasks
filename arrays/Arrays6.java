@@ -1,7 +1,9 @@
 import java.util.Random;
+
 public class Arrays6 {
     static int[] x1;
     static int[] y1;
+
     public static void main(String[] args) {
         int[] x1 = array1(10);
         for (int i = 0; i < 10; i++) {
@@ -12,9 +14,12 @@ public class Arrays6 {
         for (int i = 0; i < 10; i++) {
             System.out.println("y1[" + i + "]=" + y1[i]);
         }
-        
+
         exercise261();
+
+        exercise263();
     }
+
     public static int[] array1(int n) {
         Random rand = new Random();
         x1 = new int[n];
@@ -47,12 +52,30 @@ public class Arrays6 {
 
         double S2 = 0;
         int k2 = 0;
-        for(int i = 0; i < y1.length; i++) {
+        for (int i = 0; i < y1.length; i++) {
             S2 = S2 + y1[i];
             k2 = k2 + 1;
         }
         S2 = S2 / k2;
         P = S1 * S2;
         System.out.println("P = " + P);
+    }
+
+    public static void exercise263() {
+        int k1 = 0;
+        int k2 = 0;
+        for (int i = 0; i < x1.length; i++) {
+            if (x1[i] > 0) {
+                k1 = k1 + 1;
+            }
+        }
+
+        for (int i = 0; i < y1.length; i++) {
+            if (y1[i] > 0) {
+                k2 = k2 + 1;
+            }
+        }
+        int k = k1 + k2;
+        System.out.println("k = " + k);
     }
 }
