@@ -15,6 +15,8 @@ public class Arrays5 {
 
         exercise255();
 
+        exercise257();
+
     }
 
     public static int[] array(int n) {
@@ -64,8 +66,19 @@ public class Arrays5 {
         }
         int m = max + k;
         System.out.println("max + i  = " + m);
-    
-        
+
+    }
+
+    public static void exercise257() {
+
+        int max = numbers[0];
+        int k = 0;
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                k = i;
+            }
+        }
+        System.out.println("i = " + k);
     }
 
 }
