@@ -13,6 +13,8 @@ public class Arrays5 {
 
         exercise253();
 
+        exercise255();
+
     }
 
     public static int[] array(int n) {
@@ -39,16 +41,31 @@ public class Arrays5 {
     public static void exercise253() {
         int max = numbers[0];
         int min = numbers[0];
-        for(int i = 0; i < numbers.length; i++) {
-            if(numbers[i] > max) {
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > max) {
                 max = numbers[i];
             } else {
-                if(numbers[i] < min) {
+                if (numbers[i] < min) {
                     min = numbers[i];
                 }
             }
         }
         System.out.println("max = " + max + "   min = " + min);
-}
+    }
+
+    public static void exercise255() {
+        int max = numbers[0];
+        int k = 0;
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+                k = i;
+            }
+        }
+        int m = max + k;
+        System.out.println("max + i  = " + m);
+    
+        
+    }
 
 }
