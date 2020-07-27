@@ -9,13 +9,15 @@ public class Arrays5 {
             System.out.println("numbers[" + i + "]=" + numbers[i]);
         }
 
-        exercise251();
+        //exercise251();
 
-        exercise253();
+        //exercise253();
 
-        exercise255();
+        //exercise255();
 
-        exercise257();
+        //exercise257();
+
+        exercise259();
 
     }
 
@@ -79,6 +81,20 @@ public class Arrays5 {
             }
         }
         System.out.println("i = " + k);
+    }
+
+    public static void exercise259() {
+
+        int min = numbers[0];
+        int k = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] <= min) {
+                min = numbers[i];
+                k = i;
+            }
+        }
+        System.out.println("min = " + min + "  i = " + k);
+
     }
 
 }
