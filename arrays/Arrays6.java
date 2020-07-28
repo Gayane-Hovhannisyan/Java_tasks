@@ -1,5 +1,9 @@
 import java.util.Random;
 
+import org.graalvm.compiler.core.common.type.VoidStamp;
+
+import jdk.javadoc.internal.doclets.formats.html.resources.standard;
+
 public class Arrays6 {
 
     public static void main(String[] args) {
@@ -24,6 +28,8 @@ public class Arrays6 {
         exercise265(x1, y1);
         
         exercise269(x1, y1);
+
+        exercise270(x1, y1);
     }
 
     public static int[] array(int n) {
@@ -89,7 +95,7 @@ public class Arrays6 {
         System.out.println("S = " + S);
     }
 
-    public static void exercise269(int[] x1, int y1[]) {
+    public static void exercise269(int[] x1, int[] y1) {
         int S = 0;
         for(int i = 0; i < x1.length; i++) {
             if(i % 2 == 0) {
@@ -102,6 +108,19 @@ public class Arrays6 {
                 S = S + y1[i];
             }
         }
+        System.out.println("S = " + S);
+    }
+
+    public static void exercise270(int[] x1, int[] y1) {
+        double S = 0;
+        for(int i = 0; i < x1.length; i++) {
+            S = S + Math.pow(x1[i], 2);
+        }
+
+        for(int i = 0; i < y1.length; i++) {
+            S = S + Math.pow(x1[i], 2);
+        }
+
         System.out.println("S = " + S);
     }
 }
