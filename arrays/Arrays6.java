@@ -22,6 +22,8 @@ public class Arrays6 {
         exercise263(x1, y1);
 
         exercise265(x1, y1);
+        
+        exercise269(x1, y1);
     }
 
     public static int[] array(int n) {
@@ -34,7 +36,7 @@ public class Arrays6 {
         return x1;
     }
 
-    public static void exercise261(int[] x1, int y1[]) {
+    public static void exercise261(int[] x1, int[] y1) {
         double P = 1;
         double S1 = 0;
         int k1 = 0;
@@ -55,7 +57,7 @@ public class Arrays6 {
         System.out.println("P = " + P);
     }
 
-    public static void exercise263(int x1[], int[] y1) {
+    public static void exercise263(int[] x1, int[] y1) {
         int k1 = 0;
         int k2 = 0;
         for (int i = 0; i < x1.length; i++) {
@@ -73,7 +75,7 @@ public class Arrays6 {
         System.out.println("k = " + k);
     }
 
-    public static void exercise265(int x1[], int[] y1) {
+    public static void exercise265(int[] x1, int[] y1) {
         int S1 = 0;
         int P2 = 1;
         for(int i = 0; i< x1.length; i++) {
@@ -84,6 +86,22 @@ public class Arrays6 {
             P2 = P2 * y1[i];
         }
         double S = S1 / P2;
+        System.out.println("S = " + S);
+    }
+
+    public static void exercise269(int[] x1, int y1[]) {
+        int S = 0;
+        for(int i = 0; i < x1.length; i++) {
+            if(i % 2 == 0) {
+                S = S + x1[i];
+            }
+        }
+
+        for(int i = 0; i < y1.length; i++) {
+            if( i % 2 == 0) {
+                S = S + y1[i];
+            }
+        }
         System.out.println("S = " + S);
     }
 }
