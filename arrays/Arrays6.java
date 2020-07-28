@@ -9,14 +9,13 @@ public class Arrays6 {
     public static void main(String[] args) {
         int[] x1;
         int[] y1;
-        
 
         x1 = array(10);
         for (int i = 0; i < 10; i++) {
             System.out.println("x1[" + i + "]=" + x1[i]);
         }
 
-         y1 = array(10);
+        y1 = array(10);
         for (int i = 0; i < 10; i++) {
             System.out.println("y1[" + i + "]=" + y1[i]);
         }
@@ -26,7 +25,7 @@ public class Arrays6 {
         exercise263(x1, y1);
 
         exercise265(x1, y1);
-        
+
         exercise269(x1, y1);
 
         exercise270(x1, y1);
@@ -34,7 +33,7 @@ public class Arrays6 {
 
     public static int[] array(int n) {
         Random rand = new Random();
-        int []x1 = new int[n];
+        int[] x1 = new int[n];
         for (int i = 0; i < 10; i++) {
             x1[i] = rand.nextInt(100);
 
@@ -84,11 +83,11 @@ public class Arrays6 {
     public static void exercise265(int[] x1, int[] y1) {
         int S1 = 0;
         int P2 = 1;
-        for(int i = 0; i< x1.length; i++) {
+        for (int i = 0; i < x1.length; i++) {
             S1 = S1 + x1[i];
         }
 
-        for(int i = 0; i < y1.length; i++) {
+        for (int i = 0; i < y1.length; i++) {
             P2 = P2 * y1[i];
         }
         double S = S1 / P2;
@@ -97,14 +96,14 @@ public class Arrays6 {
 
     public static void exercise269(int[] x1, int[] y1) {
         int S = 0;
-        for(int i = 0; i < x1.length; i++) {
-            if(i % 2 == 0) {
+        for (int i = 0; i < x1.length; i++) {
+            if (i % 2 == 0) {
                 S = S + x1[i];
             }
         }
 
-        for(int i = 0; i < y1.length; i++) {
-            if( i % 2 == 0) {
+        for (int i = 0; i < y1.length; i++) {
+            if (i % 2 == 0) {
                 S = S + y1[i];
             }
         }
@@ -113,11 +112,11 @@ public class Arrays6 {
 
     public static void exercise270(int[] x1, int[] y1) {
         double S = 0;
-        for(int i = 0; i < x1.length; i++) {
+        for (int i = 0; i < x1.length; i++) {
             S = S + Math.pow(x1[i], 2);
         }
 
-        for(int i = 0; i < y1.length; i++) {
+        for (int i = 0; i < y1.length; i++) {
             S = S + Math.pow(x1[i], 2);
         }
 
