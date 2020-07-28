@@ -1,28 +1,32 @@
 import java.util.Random;
 
 public class Arrays6 {
-    static int[] x1;
-    static int[] y1;
 
     public static void main(String[] args) {
-        int[] x1 = array1(10);
+        int[] x1;
+        int[] y1;
+        
+
+        x1 = array(10);
         for (int i = 0; i < 10; i++) {
             System.out.println("x1[" + i + "]=" + x1[i]);
         }
 
-        int[] y1 = array2(10);
+         y1 = array(10);
         for (int i = 0; i < 10; i++) {
             System.out.println("y1[" + i + "]=" + y1[i]);
         }
 
-        exercise261();
+        exercise261(x1, y1);
 
-        exercise263();
+        exercise263(x1, y1);
+
+        exercise265(x1, y1);
     }
 
-    public static int[] array1(int n) {
+    public static int[] array(int n) {
         Random rand = new Random();
-        x1 = new int[n];
+        int []x1 = new int[n];
         for (int i = 0; i < 10; i++) {
             x1[i] = rand.nextInt(100);
 
@@ -30,17 +34,7 @@ public class Arrays6 {
         return x1;
     }
 
-    public static int[] array2(int n) {
-        Random rand = new Random();
-        y1 = new int[n];
-        for (int i = 0; i < 10; i++) {
-            y1[i] = rand.nextInt(100);
-
-        }
-        return y1;
-    }
-
-    public static void exercise261() {
+    public static void exercise261(int[] x1, int y1[]) {
         double P = 1;
         double S1 = 0;
         int k1 = 0;
@@ -61,7 +55,7 @@ public class Arrays6 {
         System.out.println("P = " + P);
     }
 
-    public static void exercise263() {
+    public static void exercise263(int x1[], int[] y1) {
         int k1 = 0;
         int k2 = 0;
         for (int i = 0; i < x1.length; i++) {
@@ -77,5 +71,19 @@ public class Arrays6 {
         }
         int k = k1 + k2;
         System.out.println("k = " + k);
+    }
+
+    public static void exercise265(int x1[], int[] y1) {
+        int S1 = 0;
+        int P2 = 1;
+        for(int i = 0; i< x1.length; i++) {
+            S1 = S1 + x1[i];
+        }
+
+        for(int i = 0; i < y1.length; i++) {
+            P2 = P2 * y1[i];
+        }
+        double S = S1 / P2;
+        System.out.println("S = " + S);
     }
 }
