@@ -1,5 +1,5 @@
 
-public class arrays3 {
+public class Arrays3 {
     public static void main(String[] args) {
         exercise231();
 

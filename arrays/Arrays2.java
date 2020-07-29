@@ -1,6 +1,6 @@
 import org.graalvm.compiler.hotspot.stubs.OutOfBoundsExceptionStub;
 
-public class arrays2 {
+public class Arrays2 {
     public static void main(String[] args) {
         exercise223(0, 100);
 

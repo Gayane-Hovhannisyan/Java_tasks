@@ -1,6 +1,6 @@
 import jdk.javadoc.internal.doclets.formats.html.resources.standard;
 
-public class arrays4 {
+public class Arrays4 {
     public static void main(String[] args) {
 
         exercise242(2);
