@@ -4,6 +4,8 @@ public class Arrays1 {
     public static void main(String[] args) {
         exercise211();
 
+        exercise212();
+
         exercise213();
 
         exercise215();
@@ -23,6 +25,20 @@ public class Arrays1 {
         for (int i = 0; i < 5; i++) {
             if (numbers[i] > 0) {
                 S = S + numbers[i];
+                k = k + 1;
+            }
+        }
+        S = S / k;
+        System.out.println("S = " + S);
+    }
+
+    public static void exercise212() {
+        int numbers[] = { 1, 4, -58, 12, -12 };
+        double S = 0;
+        int k = 0;
+        for (int i = 0; i < 5; i++) {
+            if (numbers[i] > 0) {
+                S = S + Math.pow(numbers[i],2);
                 k = k + 1;
             }
         }
