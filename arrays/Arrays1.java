@@ -12,6 +12,8 @@ public class Arrays1 {
 
         exercise215();
 
+        exercise216();
+
         exercise218();
 
         exercise220();
@@ -40,7 +42,7 @@ public class Arrays1 {
         int k = 0;
         for (int i = 0; i < 5; i++) {
             if (numbers[i] > 0) {
-                S = S + Math.pow(numbers[i],2);
+                S = S + Math.pow(numbers[i], 2);
                 k = k + 1;
             }
         }
@@ -88,6 +90,17 @@ public class Arrays1 {
         System.out.print("S = " + S);
     }
 
+    public static void exercise216() {
+        int numbers[] = { 1, -5, 485, 7, 8, 36, 48, 7, 8 };
+        int P = 1;
+        for (i = 0; i < numbers.length; i++) {
+            if (i % 2 == 0) {
+                P = P * numbers[i];
+            }
+        }
+        System.out.println("P = " + P);
+    }
+
     public static void exercise218() {
         int numbers[] = { 1, -9, 5, 9, 547, -69, 7, -7, 36, -32 };
         int S = 0;
@@ -102,8 +115,8 @@ public class Arrays1 {
     public static void exercise220() {
         int number[] = { 1, 58, -69, 0, 87, 0, -45, 0, 2, 0 };
         int S = 0;
-        for(int i = 0; i < 10; i++) {
-            if(number[i] != 0) {
+        for (int i = 0; i < 10; i++) {
+            if (number[i] != 0) {
                 S = S + number[i];
             }
         }
@@ -112,7 +125,7 @@ public class Arrays1 {
 
     public static void exercise222(int c, int d) {
 
-        int numbers[] = {12, 1254, -45, 2, 45, 54, 7, 3, 26};
+        int numbers[] = { 12, 1254, -45, 2, 45, 54, 7, 3, 26 };
         int P = 1;
         for (int i = 0; i < 9; i++) {
             if (numbers[i] >= c && numbers[i] < d) {
