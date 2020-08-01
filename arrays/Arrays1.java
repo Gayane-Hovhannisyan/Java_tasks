@@ -14,6 +14,8 @@ public class Arrays1 {
 
         exercise216();
 
+        exercise217();
+
         exercise218();
 
         exercise220();
@@ -100,6 +102,18 @@ public class Arrays1 {
         }
         System.out.println("P = " + P);
     }
+
+    public static void exercise217() {
+        int numbers[] = { 1, -5, 485, 7, 8, 36, 48, 7, 8 };
+        int P = 1;
+        for(i = 0; i < numbers.length; i++) {
+            if(i % 2 == 1) {
+                P = P * numbers[i];
+            }
+        }
+        System.out.println("P = " + P);
+    }
+
 
     public static void exercise218() {
         int numbers[] = { 1, -9, 5, 9, 547, -69, 7, -7, 36, -32 };
