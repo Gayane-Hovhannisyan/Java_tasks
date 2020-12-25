@@ -16,8 +16,12 @@ public class ComputerAreaWithConsoleInput {
         double average = (num1 + num2 + num3) / 3;
         System.out.println("The average of " + num1 + ", " + num2 + ", " + num3 + " is " + Descriptive  abbreviationsaverage); */
 
-         int i, j, k;
+        /* int i, j, k;
          i = j = k = 2;
-        System.out.println(i + " " + j + " " + k + " ");
+        System.out.println(i + " " + j + " " + k + " "); */
+
+        int k = 0;
+        int i = k + 2;
+        System.out.println(i);
     }
 }
