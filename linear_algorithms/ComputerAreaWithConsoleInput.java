@@ -24,12 +24,18 @@ public class ComputerAreaWithConsoleInput {
         int i = k + 2;
         System.out.println(i); */
 
-        final double PI = 3.14159;
+        /*
+         final double PI = 3.14159;
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number for radius: ");
         double radius = input.nextDouble();
         double area = radius * radius * PI;
 
-        System.out.println("The area for the circle of radius " + radius + " is " + area);
+        System.out.println("The area for the circle of radius " + radius + " is " + area); */
+
+        double miles = 100;
+        final double KILOMETERS_PER_MILE = 1.609; 
+        double kilometers = miles * KILOMETERS_PER_MILE;
+        System.out.println(kilometers);
         }
 }
