@@ -38,11 +38,31 @@ public class ComputerAreaWithConsoleInput {
         double kilometers = miles * KILOMETERS_PER_MILE;
         System.out.println(kilometers); */
 
-        Scanner input = new Scanner(System.in);
+       /* Scanner input = new Scanner(System.in);
         System.out.println("Enter an integer for seconds:  ");
         int seconds = input.nextInt();
         int minutes = seconds / 60;
         int remainingSeconds = seconds % 60;
-        System.out.println(seconds + " seconds is " + minutes + " minutes and " + remainingSeconds + " seconds ");
+        System.out.println(seconds + " seconds is " + minutes + " minutes and " + remainingSeconds + " seconds "); */
+
+        System.out.println("Exercise 2.9.2 ");
+
+        int a = 56 % 6;
+        System.out.println("a= " + a);
+        
+        a = 78 % -6;
+        System.out.println("a= " + a);
+
+        a = -34 % 5;
+        System.out.println("a= " + a);
+
+        a = -34 % -5;
+        System.out.println("a= " + a);
+
+        a = 5 % 1;
+        System.out.println("a= " + a);
+
+        a = 1 % 5;
+        System.out.println("a= " + a);
         }
 }
