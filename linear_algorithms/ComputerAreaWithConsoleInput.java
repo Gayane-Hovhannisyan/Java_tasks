@@ -45,7 +45,7 @@ public class ComputerAreaWithConsoleInput {
         int remainingSeconds = seconds % 60;
         System.out.println(seconds + " seconds is " + minutes + " minutes and " + remainingSeconds + " seconds "); */
 
-        System.out.println("Exercise 2.9.2 ");
+       /* System.out.println("Exercise 2.9.2 ");
 
         int a = 56 % 6;
         System.out.println("a= " + a);
@@ -63,6 +63,13 @@ public class ComputerAreaWithConsoleInput {
         System.out.println("a= " + a);
 
         a = 1 % 5;
-        System.out.println("a= " + a);
+        System.out.println("a= " + a); */
+
+        System.out.println("Exercise 2.9.3 ");
+        int day = (2 + 100) % 7;
+        System.out.println("Sunday = 0, Monday = 1, Tuesday = 2 ");
+        System.out.println(" Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6, Sunday = 7 ");
+        System.out.println("day = " + day);
+
         }
 }
