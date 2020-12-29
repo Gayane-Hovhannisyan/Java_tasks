@@ -33,9 +33,16 @@ public class ComputerAreaWithConsoleInput {
 
         System.out.println("The area for the circle of radius " + radius + " is " + area); */
 
-        double miles = 100;
+       /* double miles = 100;
         final double KILOMETERS_PER_MILE = 1.609; 
         double kilometers = miles * KILOMETERS_PER_MILE;
-        System.out.println(kilometers);
+        System.out.println(kilometers); */
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter an integer for seconds:  ");
+        int seconds = input.nextInt();
+        int minutes = seconds / 60;
+        int remainingSeconds = seconds % 60;
+        System.out.println(seconds + " seconds is " + minutes + " minutes and " + remainingSeconds + " seconds ");
         }
 }
