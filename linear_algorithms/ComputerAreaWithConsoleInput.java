@@ -65,11 +65,22 @@ public class ComputerAreaWithConsoleInput {
         a = 1 % 5;
         System.out.println("a= " + a); */
 
-        System.out.println("Exercise 2.9.3 ");
+       /*  System.out.println("Exercise 2.9.3 ");
         int day = (2 + 100) % 7;
         System.out.println("Sunday = 0, Monday = 1, Tuesday = 2 ");
         System.out.println(" Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6, Sunday = 7 ");
-        System.out.println("day = " + day);
+        System.out.println("day = " + day); */
+
+        System.out.println("Exercise about operators ");
+        System.out.println("25 / 4 is " + 25 /4);
+        System.out.println("25 / 4.0 is " + 25/ 4.0);
+        System.out.println("3 * 2 / 4 is " + 3* 2 / 4);
+        System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4);
+        
+        
+        
+   
+        
 
         }
 }
