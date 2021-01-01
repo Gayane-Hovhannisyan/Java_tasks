@@ -1,4 +1,7 @@
 import java.util.Random;
+import java.util.Scanner;
+
+import org.graalvm.compiler.core.common.type.ArithmeticOpTable.UnaryOp.Sqrt;
 
 public class Arrays3a {
     static int[] numbers;
@@ -12,9 +15,9 @@ public class Arrays3a {
 
         exercise232();
 
-        /*exercise235();
+        exercise235();
 
-        exercise238();
+        /*exercise238();
 
         exercise240(); */
     }
@@ -50,5 +53,15 @@ public class Arrays3a {
         }
         System.out.println(a);
     
+    }
+    public static void exercise235() {
+        double S = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 ==1) {
+                S = Math.pow(numbers[i],2);
+            }
+        }
+        S = Math.sqrt(S);
+        System.out.println(S);
     }
 }
