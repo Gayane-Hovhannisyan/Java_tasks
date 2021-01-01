@@ -9,14 +9,14 @@ public class Arrays3a {
 
         exercise231();
 
-       /* exercise232();
+        exercise232();
 
-        exercise235();
+        /*exercise235();
 
         exercise238();
 
         exercise240(); */
-    }
+    }}
 
     public static int[] array(int n) {
         Random rand = new Random();
@@ -30,7 +30,6 @@ public class Arrays3a {
 
 
     public static void exercise231() {
-        int numbers[] = { 12, 5, 48, -9, -1, 13, 31, 12, 4 };
         double S = 0;
         for (int i = 0; i < 9; i++) {
             if (numbers[i] % 2 == 0) {
@@ -42,6 +41,13 @@ public class Arrays3a {
     }
 
     public static void exercise232() {
-
+        int a = 0;
+        for(int i = 0; i < numbers.length; i++) {
+            if(numbers[i] % 2 == 0) {
+                a = a +1;
+            }
+        }
+        System.out.println(a);
+    
     }
 }
