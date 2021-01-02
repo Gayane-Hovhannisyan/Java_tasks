@@ -17,9 +17,9 @@ public class Arrays3a {
 
         exercise235();
 
-        /*exercise238();
+        exercise238();
 
-        exercise240(); */
+       /*  exercise240(); */ 
     }
 
     public static int[] array(int n) {
@@ -64,4 +64,18 @@ public class Arrays3a {
         S = Math.sqrt(S);
         System.out.println(S);
     }
+
+    public static void exercise238() {
+       double S = 0;
+       int k = 0;
+       for(int i = 0; i < numbers.length; i++) {
+           if (numbers[i] % 3 == 0) {
+               S = S + numbers[i];
+               k = k +1;
+           }
+       }
+       S = S / k;
+       System.out.println("S = " + S);
+    }
+
 }
