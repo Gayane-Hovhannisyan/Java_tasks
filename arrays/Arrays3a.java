@@ -19,7 +19,7 @@ public class Arrays3a {
 
         exercise238();
 
-       /*  exercise240(); */ 
+        exercise240();
     }
 
     public static int[] array(int n) {
@@ -76,6 +76,16 @@ public class Arrays3a {
        }
        S = S / k;
        System.out.println("S = " + S);
+    }
+
+    public static void exercise240() {
+        int k = 0;
+        for(int i = 0; i < numbers.length; i++) {
+            if(numbers[i] % 7 == 0) {
+                k = k + 1;
+            }
+        }
+        System.out.println("k = " + k );
     }
 
 }
