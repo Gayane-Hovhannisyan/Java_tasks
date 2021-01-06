@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+import javax.xml.namespace.QName;
 public class ComputerAreaWithConsoleInput {
     public static void main(String[] args) {
        /* Scanner input = new Scanner(System.in);
@@ -71,12 +73,29 @@ public class ComputerAreaWithConsoleInput {
         System.out.println(" Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6, Sunday = 7 ");
         System.out.println("day = " + day); */
 
-        System.out.println("Exercise about operators ");
+       /* System.out.println("Exercise about operators ");
         System.out.println("25 / 4 is " + 25 /4);
         System.out.println("25 / 4.0 is " + 25/ 4.0);
         System.out.println("3 * 2 / 4 is " + 3* 2 / 4);
-        System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4);
-        
+        System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4); */
+
+       
+            
+            long totalMilliseconds = System.currentTimeMillis();
+            
+            long totalSeconds = totalMilliseconds / 1000;
+            
+            long currentSecond = totalSeconds % 60;
+            
+            long totalMinutes = totalSeconds / 60; 
+            
+            long currentMinute = totalMinutes % 60; 
+            
+            long totalHours = totalMinutes / 60; 
+            
+            long currentHour = totalHours % 24;
+            
+            System.out.println("Current time is " + currentHour + ":" + currentMinute + ":" + currentSecond + " GMT");
         
         
    
