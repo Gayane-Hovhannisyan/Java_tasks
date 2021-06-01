@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         // check point 4.2.1
@@ -45,12 +46,26 @@ public class Test {
         System.out.println("a13 = " + a);
         
         a =  Math.round(Math.abs(-2.5));
-        System.out.println("a14 = " + a); */
+        System.out.println("a14 = " + a); 
         String str = new String("    AlL  Iknow");
         System.out.println("before:  " + str);
-       // System.out.println("after up :  " + str.toUpperCase());
+        System.out.println("after up :  " + str.toUpperCase());
         System.out.println("after low :  " + str.trim());
-        System.out.println("length = :  " + str.length());
+        System.out.println("length = :  " + str.length()); 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the first city: ");
+        String city1 = input.hasNextLine();
+        System.out.println("Enter the second city: ");
+        String city2 = input.nextLine();
+        if (city1.compareTo(city2) < 0) {
+           { System.out.println("The cities in alphabetical order are " + city1 + " " + city2);}
+            else
+            {System.out.println("The cities in alphabetical order are " + city2 + " " + city1);} */
+
+            String a = " HelloJavaIamhere";
+            String result = a.substring(4, 10);
+            System.out.println("res =" + result);
+
+        }
         
     }
-}
