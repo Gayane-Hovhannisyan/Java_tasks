@@ -1,7 +1,7 @@
 public class Test {
     public static void main(String[] args) {
         // check point 4.2.1
-        double  a;
+       /* double  a;
         a = (int) Math.sin(2 * Math.PI);
         System.out.println("a1 = " + a);
 
@@ -45,6 +45,12 @@ public class Test {
         System.out.println("a13 = " + a);
         
         a =  Math.round(Math.abs(-2.5));
-        System.out.println("a14 = " + a);
+        System.out.println("a14 = " + a); */
+        String str = new String("    AlL  Iknow");
+        System.out.println("before:  " + str);
+       // System.out.println("after up :  " + str.toUpperCase());
+        System.out.println("after low :  " + str.trim());
+        System.out.println("length = :  " + str.length());
+        
     }
 }
