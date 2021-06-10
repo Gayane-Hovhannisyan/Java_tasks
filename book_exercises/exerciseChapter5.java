@@ -1,13 +1,14 @@
 import java.util.Scanner;
 public class exerciseChapter5 {
     public static void main(String[] args) {
-        a();
-        b();
-        c();
-        d();
+        //a();
+        //b();
+        //c();
+        //d();
         //chap57(); 
         //chap58() 
         //chap517();
+        chap550();
 
     }
     public static void a () {
@@ -86,5 +87,14 @@ public class exerciseChapter5 {
         m = m-1;
         
     }
+  }
+
+  public static void chap550() {
+      for(int i = 1; i < 10; i++){
+          for(int j = 1; j<10; j++) {
+              System.out.println(i +" * " + j + " = " + i*j);
+          }
+          System.out.print("\n");
+      }
   }
     }
