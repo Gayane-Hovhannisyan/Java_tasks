@@ -1,11 +1,13 @@
 import java.util.Scanner;
 public class exerciseChapter5 {
     public static void main(String[] args) {
-        /*a();
+        a();
         b();
         c();
-        chap57(); 
-        chap58() */
+        d();
+        //chap57(); 
+        //chap58() 
+        //chap517();
 
     }
     public static void a () {
@@ -28,11 +30,21 @@ public class exerciseChapter5 {
 
      public static void c() {
         for (int i = 0; i<6; i++) {
-            for(int j = 6-1-i; j <= 6; j++) {
+            for(int j = i; j < 6; j++) {
                 System.out.print(" * ");
             }
             System.out.print("\n");
         }
+     }
+
+     public static void d() {
+         for(int i = 0; i<6; i++) {
+             for(int j = 6-i-1; j < 6; j++) {
+                 System.out.print(" * ");
+             }
+             System.out.print("\n");
+
+         }
      }
 
      public static void chap57() {
@@ -62,5 +74,17 @@ public class exerciseChapter5 {
     System.out.println("****" + score);}
   }
 
-  
+  public static void chap517() {
+
+    Scanner input = new Scanner(System.in);
+    System.out.println("Enter number ");
+    int number = input.nextInt();
+    int m = number;
+    for(int i = 0; i< 2*number-1; i++) {
+        if(m == 0) {continue;}
+        System.out.print(Math.abs(m) + " ");
+        m = m-1;
+        
+    }
+  }
     }
