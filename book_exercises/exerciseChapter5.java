@@ -1,47 +1,56 @@
 import java.util.Scanner;
 public class exerciseChapter5 {
     public static void main(String[] args) {
-        //a();
-        //b();
-        //c();
-        //d();
+        int[][] array = { 
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        a();
+        b();
+        c();
+        d();
         //chap57(); 
         //chap58() 
         //chap517();
-        chap550();
+        //chap550();
 
     }
     public static void a () {
-        for(int i = 0; i<6; i++) {
+        
+        for(int i = 0; i < array.length; i++) {
             for(int j = 0; j <= i; j++) {
-                System.out.print(" * ");
+                System.out.print(array [i][j] + "  ");
             }
             System.out.print("\n");
 
         }
     }
      public static void b() {
-         for (int i = 0; i<6; i++) {
-             for(int j = 0; j < 6-i-1; j++) {
-                 System.out.print(" * ");
+        
+         for (int i = 0; i<array.length; i++) {
+             for(int j = 0; j < array.length-i-1; j++) {
+                 System.out.print(array[i][j] + "  ");
              }
              System.out.print("\n");
          }
      }
 
      public static void c() {
+        
         for (int i = 0; i<6; i++) {
-            for(int j = i; j < 6; j++) {
-                System.out.print(" * ");
+            for(int j = i; j < array.length; j++) {
+                System.out.print(array[i][j] + "  ");
             }
             System.out.print("\n");
         }
      }
 
      public static void d() {
-         for(int i = 0; i<6; i++) {
-             for(int j = 6-i-1; j < 6; j++) {
-                 System.out.print(" * ");
+        
+         for(int i = 0; i<array.length; i++) {
+             for(int j = array.length-i-1; j < array.length; j++) {
+                 System.out.print(array[i][j] + "  ");
              }
              System.out.print("\n");
 
