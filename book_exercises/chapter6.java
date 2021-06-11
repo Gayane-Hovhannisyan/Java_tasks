@@ -1,9 +1,16 @@
+import java.util.Scanner;
 public class chapter6 {
     public static void main(String[] args) {
-        int i = 5;
-        int j = 2;
-        int k = max(i, j);
-        System.out.println("The max of " + i + " and " + j + " is " + k);
+        //int i = 5;
+        //int j = 2;
+        //int k = max(i, j);
+        //System.out.println("The max of " + i + " and " + j + " is " + k);
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a HEX number");
+        String hex = input.nextLine();
+
+        System.out.println("The decimal value for hex number " + hex + " is " + hexToDecimal(hex.toUpperCase()));
     } 
     public static int max(int num1, int num2) {
         int result;
@@ -13,5 +20,19 @@ public class chapter6 {
             result = num2;
         }
         return result;
+    }
+
+    public static int hexToDecimal(String hex) {
+        int decimalValue = 0;
+        for(int i = 0; i<hex.length(); i++) {
+            char hexChar = hex.charAt(i);
+            decimalValue = decimalValue * 16 + hexCharToDecimal(hexChar);
+        }
+        return decimalValue;
+    }
+    public static int hexCharToDecimal(char ch) {
+        if (ch >= 'A' && ch <= 'F') 
+        return 10 + ch - 'A';
+        else return ch - '0';
     }
 }
