@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 public class chapter6 {
     public static void main(String[] args) {
@@ -13,10 +14,23 @@ public class chapter6 {
         System.out.println("The decimal value for hex number " + hex + " is " + hexToDecimal(hex.toUpperCase())); */
 
         //Test Method Overloading
-        System.out.println("The maximum of 3  and 4 is " + max(3, 4));
+        //System.out.println("The maximum of 3  and 4 is " + max(3, 4));
 
-        System.out.println("The maximum of 3.0 and 5.4 is " + max(3.0, 5.4));
-        System.out.println("The maximum of 3.0, 5.4 and 10.14 is " + max(3.0, 5.4, 10.14));
+        //System.out.println("The maximum of 3.0 and 5.4 is " + max(3.0, 5.4));
+        //System.out.println("The maximum of 3.0, 5.4 and 10.14 is " + max(3.0, 5.4, 10.14));
+
+        // RandomCharacter
+
+        final int NUMBER_OF_CHARS = 175;
+        final int CHARS_PER_LINE = 25;
+
+        for (int i = 0; i < NUMBER_OF_CHARS; i++) {
+            char ch = RandomCharacter.getRandomLowerCaseLetter();
+            if((i+1) % CHARS_PER_LINE == 0 ) 
+                System.out.println(ch);
+            else 
+                System.out.print(ch);
+        }
 
 
     } 
