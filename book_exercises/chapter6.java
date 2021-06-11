@@ -6,13 +6,21 @@ public class chapter6 {
         //int k = max(i, j);
         //System.out.println("The max of " + i + " and " + j + " is " + k);
 
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         System.out.print("Enter a HEX number");
         String hex = input.nextLine();
 
-        System.out.println("The decimal value for hex number " + hex + " is " + hexToDecimal(hex.toUpperCase()));
+        System.out.println("The decimal value for hex number " + hex + " is " + hexToDecimal(hex.toUpperCase())); */
+
+        //Test Method Overloading
+        System.out.println("The maximum of 3  and 4 is " + max(3, 4));
+
+        System.out.println("The maximum of 3.0 and 5.4 is " + max(3.0, 5.4));
+        System.out.println("The maximum of 3.0, 5.4 and 10.14 is " + max(3.0, 5.4, 10.14));
+
+
     } 
-    public static int max(int num1, int num2) {
+    /*public static int max(int num1, int num2) {
         int result;
         if(num1 > num2) {
             result = num1;
@@ -20,7 +28,7 @@ public class chapter6 {
             result = num2;
         }
         return result;
-    }
+    } */
 
     public static int hexToDecimal(String hex) {
         int decimalValue = 0;
@@ -35,4 +43,23 @@ public class chapter6 {
         return 10 + ch - 'A';
         else return ch - '0';
     }
+
+    // Test Method Overloading
+    public static int max(int num1, int num2)  {
+    if (num1 > num2)
+        return num1;
+    else 
+        return num2;
+    }
+
+    public static double max (double num1, double num2) {
+    if  (num1 > num2) 
+        return num1;
+    else 
+        return num2;}
+    
+
+    public static double max(double num1, double num2, double num3) {
+        return max(max(num1, num2), num3);
+    }   
 }
